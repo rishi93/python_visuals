@@ -12,5 +12,7 @@ for sine in sines:
 
 plt.figure()
 plt.title('Fourier series of sawtooth wave')
-plt.plot(t, y)
+for sine in sines:
+    plt.plot(t, sine)
+plt.plot(t, y, 'black')
 plt.show()
